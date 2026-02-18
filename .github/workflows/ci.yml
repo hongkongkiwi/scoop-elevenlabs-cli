@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate manifest schema
+        run: |
+          jq -e '.version and .description and .homepage and .license and .architecture["64bit"].url and .architecture["64bit"].hash and .bin' elevenlabs-cli.json >/dev/null
+
+      - name: Validate checkver and autoupdate
+        run: |
+          jq -e '.checkver.url and .checkver.re and .autoupdate.architecture["64bit"].url and .autoupdate.hash.url and .autoupdate.hash.regex' elevenlabs-cli.json >/dev/null

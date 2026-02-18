@@ -1,0 +1,24 @@
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local env/config
+.env
+.env.*
+!.env.example
+.envrc
+.direnv/
+
+# Local packaging/test artifacts
+*.orig
+*.rej
+*.log
+*.zip
+/test-output/

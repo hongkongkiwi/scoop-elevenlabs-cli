@@ -1,12 +1,12 @@
 {
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "Unofficial CLI for ElevenLabs text-to-speech API",
     "homepage": "https://github.com/hongkongkiwi/elevenlabs-cli",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hongkongkiwi/elevenlabs-cli/releases/download/v0.1.7/elevenlabs-cli-v0.1.7-x86_64-pc-windows-msvc.zip",
-            "hash": "17ccc26438bbcab0175abf429a88e7376d34fa7ad7888e404f3dd0a038f5b9df"
+            "url": "https://github.com/hongkongkiwi/elevenlabs-cli/releases/download/v0.1.8/elevenlabs-cli-v0.1.8-x86_64-pc-windows-msvc.zip",
+            "hash": "02237ca2bcbe0119375d330c874089d92c36d7da4efaf494865375f8a7f24ce7"
         }
     },
     "bin": "elevenlabs-cli.exe",
